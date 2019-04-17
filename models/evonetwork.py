@@ -15,7 +15,7 @@ def get_decoder(decoder_str, genome, channels, repeats=None):
     :return: evolution.ChannelBasedDecoder
     """
     if decoder_str == "residual":
-        return ResidualGenomeDecoder(genome, channels, repeats=repeats)
+        return ResidualGenomeDecoder(genome, channels)
 
     if decoder_str == "swapped-residual":
         return ResidualGenomeDecoder(genome, channels, preact=True, repeats=repeats)
