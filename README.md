@@ -13,3 +13,7 @@ NSGA-Net only will run with Python 3.
 
 ### Installing required libs 
 ```pip3 install -r requirements.txt``` 
+
+### Run
+
+```python nsga2_main.py --eval-method 0 --ngpu 8 --batch-size 4096 --nthreads 24 --niters 32```
